@@ -19,10 +19,10 @@ Both data frames have over fifty columns. The following code will help break dow
 To convert the non-numeric columns is apply the get_dummies() method.
 </p>
 
-#### pd.get_dummies()
+#### <u> pd.get_dummies() </u>
 
 <p>
-Here is an example of how pd.get_dummies() work... The following data frame is named <i> preview_get_dummies </i> displays two non-numeric columns.
+Here is an example of how pd.get_dummies() work. The following data frame is named <i> preview_get_dummies </i> displays two non-numeric columns.
 </p> 
 
 ![Get_Dummies() Part 1](https://github.com/samuelroiz/Predict_Credit_Risk/blob/main/Images/example_get_dummies_part_1.png)
