@@ -88,7 +88,7 @@ To get better accuracy for our model, apply the scaler method. The point of Stan
 The LogisticRegression Model() will have the same code except X_train and X_test will be replaced by X_train_scaled and X_test_scaled. After replacing the test and train values, the accuracy improved from 0.5168013611229264 to 0.767333049766057. The score increased by 22. 
 </p>
 
-![Random Forest Classifier with Scaler](https://github.com/samuelroiz/Predict_Credit_Risk/blob/main/Images/random_forest_classifier_code_with_scaler.png) Random Forest Classifier_code_witH_scaler
+![Random Forest Classifier with Scaler](https://github.com/samuelroiz/Predict_Credit_Risk/blob/main/Images/random_forest_classifier_code_with_scaler.png) 
 
 <p>
 The RandomForestClassifier Model() will have the same code except X_train and X_test will be replaced by X_train_scaled and X_test_scaled. After replacing the test and train values, the accuracy decreased from 0.6424925563589962 to 0.6339855380689069. The standardscaler did not improve the RandomForestClassifier. 
