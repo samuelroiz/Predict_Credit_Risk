@@ -28,7 +28,7 @@ Here is an example of how pd.get_dummies() work.
 ![Get_Dummies() Part 1](https://github.com/samuelroiz/Predict_Credit_Risk/blob/main/Images/example_get_dummies_part_1.png) <p> The following data frame is named <i> preview_get_dummies </i> displays two non-numeric columns. </p>
 
 <p>
-Then apply the get_dummies() code: pd.get_dummies(<i> preview_get_dummies </i>)
+  Then apply the get_dummies() code: <b> pd.get_dummies(<i> preview_get_dummies </i>) </b>
 </p>
 
 ![Get_Dummies() Part 2](https://github.com/samuelroiz/Predict_Credit_Risk/blob/main/Images/example_get_dummies_part_2.png)
