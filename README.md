@@ -5,7 +5,8 @@ Building a machine learning model that attempts to predict whether a loan will b
 <p>
 In the given 2019 and 2020 Q1 data frames, not all of the column values were numeric. None numeric columns lead to an issue because if the column values are not numeric,  it fails to meet the standards of machine learning models. As we can see in the train data frame, we have seven columns that fail to hold numeric values only. 
 </p>
-![]()
+![2019 Train Table](https://github.com/samuelroiz/Predict_Credit_Risk/blob/main/Images/train_df_aka_2019.png)
+![2020 Q1 Test Table](https://github.com/samuelroiz/Predict_Credit_Risk/blob/main/Images/test_df_aka_2020_q1.png)
 <p>
 Both data frames have over fifty columns. The following code will help break down the columns with object values only. Object values are the same thing as string values. 
 </p>
