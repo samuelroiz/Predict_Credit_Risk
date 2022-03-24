@@ -1,5 +1,11 @@
 # Predict_Credit_Risk
-Building a machine learning model that attempts to predict whether a loan will become high risk or not. Used sklearn, and pandas. 
+<p>
+Built a machine learning model that attempts to predict whether a loan will become high risk or not for a company named LendingClub. LendingClub is a peer-to-peer lending services company that allows individual investors to partially fund personal loans as well as buy and sell notes backing the loans on a secondary market. LendingClub offers their previous data through an API. Utilized the given data from LendingClub to create machine learning models to classify the risk level of loans. Compared the Logistic Regression model and Random Forest Classifier with sklearn and pandas. 
+</p>
+
+
+
+
 
 ## Machine Learning Steps
 
@@ -96,7 +102,7 @@ The RandomForestClassifier Model() will have the same code except X_train and X_
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://gist.github.com/samuelroiz/1af49ec9eea365bc845ba04c5071a976) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
