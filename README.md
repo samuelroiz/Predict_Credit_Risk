@@ -110,7 +110,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Samuel Roiz** - *Initial work* - [Profile](https://github.com/samuelroiz)
+* **Samuel Roiz** - *Data clean, Analyzed Data, Math Model* - [Profile](https://github.com/samuelroiz)
 
 See also the list of [contributors](https://github.com/samuelroiz) who participated in this project.
 
