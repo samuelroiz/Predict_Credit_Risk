@@ -100,6 +100,12 @@ The LogisticRegression Model() will have the same code except X_train and X_test
 The RandomForestClassifier Model() will have the same code except X_train and X_test will be replaced by X_train_scaled and X_test_scaled. After replacing the test and train values, the accuracy decreased from 0.6424925563589962 to 0.6339855380689069. The standardscaler did not improve the RandomForestClassifier. 
 </p>
 
+### LogisticRegression Model() and RandomForestClassifier() Comparison
+
+<p>
+  In this specific model, the standard scaler improves the Logist Regression Model. As it was stated before, it improved from 0.5168013611229264 to 0.767333049766057. 
+</p>
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/samuelroiz/1af49ec9eea365bc845ba04c5071a976) for details on our code of conduct, and the process for submitting pull requests to us.
