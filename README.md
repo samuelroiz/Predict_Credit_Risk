@@ -82,6 +82,20 @@ Random forest classifier is another model that decision trees based on a random 
 
 ### LogisticRegression Model() and RandomForestClassifier() with StandardScaler
 
+#### How does the Standard scaler work and what is it doing to the data? 
+
+<p> Standard Scaler has a formula, let's assume the formula is <b> z = (x - u) / s </b> where <b> z </b> is the scaled data, <b> x </b> is to be the scaled data, <b> u </b> is the average of the training samples, and <b> s </b> is the standard deviation of the training samples. The average or mean is the sum of all data points divided by the number of data points. In this case, <b> u </b> is going to add up all of the training samples divided by several training samples. The standard deviation formula starts by taking the given values and placing them in one column. Square each value and place them in a second column. Find the sum of all values in the first column and square it. The value is divided by the number of data points in first the column and called this number <b> i </b>. Find the sum of all values in the created second column. Once find the value, subtract it by <b> i </b>. The outcome will be divided by the number of data points minus one. Value leads to the <b> variance </b> of the sample and data. Finally, the variance will be square rooted leading to the value standard deviation of the data. 
+</p>
+
+#### Example of Standard Scaler
+<p>
+To demonstrate the algorithm and how it functions, consider the data set {1,2,3,4,5}. The data set consists of 5 one dimensional data points and each data point has one feature. Now apply the standard scaler() to the data. The data set becomes {−1.41,−0.71,0.,0.71,1.41}.
+</p>
+
+<p>
+  The following example takes all of the data points and converts them to a closer range of 0 to 1. Standard scaler helps prevent outliers and keep the data closer to each other rather than gaps. 
+  </p>
+
 ![Standard Scaler Code](https://github.com/samuelroiz/Predict_Credit_Risk/blob/main/Images/standard_scaler_code.png)
 
 <p>
@@ -103,13 +117,13 @@ The RandomForestClassifier Model() will have the same code except X_train and X_
 ### LogisticRegression Model() and RandomForestClassifier() Comparison
 
 <p>
-  In this specific model, the standard scaler improves the Logist Regression Model. As it was stated before, it improved from 0.5168013611229264 to 0.767333049766057.
+  In this specific model, the standard scaler improves the Logistic Regression Model. It improved from 0.5168013611229264 to 0.767333049766057 and an improvement for the Logistic Regression model. Applying the standard scaler worked for the logistic regression model is because the data has outliers and gaps from each data point. Outliers and gaps decrease the accuracy of the model. However, applying the standard scaler does not always help the model's accuracy. 
 </p>
 
-##### How does the Standard scaler work and what is it doing to the data? 
-
-<p> Standard Scaler has a formula, let's assume the formula is <b> z = (x - u) / s </b> where <b> z </b> is the scaled data, <b> x </b> is to be the scaled data, <b> u </b> is the average of the training samples, and <b> s </b> is the standard deviation of the training samples. The average or mean is the sum of all data points divided by the number of data points. In this case, <b> u </b> is going to add up all of the training samples divided by several training samples. The standard deviation formula starts by taking the given values and placing them in one column. Square each value and place them in a second column. Find the sum of all values in the first column and square it. The value is divided by the number of data points in first the column and called this number <b> i </b>. Find the sum of all values in the created second column. Once find the value, subtract it by <b> i </b>. The outcome will be divided by the number of data points minus one. Value leads to the <b> variance </b> of the sample and data. Finally, the variance will be square rooted leading to the value standard deviation of the data. 
+<p>
 </p>
+
+
 
 ## Contributing
 
