@@ -94,7 +94,25 @@ To demonstrate the algorithm and how it functions, consider the data set {1,2,3,
 
 <p>
   The following example takes all of the data points and converts them to a closer range of 0 to 1. Standard scaler helps prevent outliers and keep the data closer to each other rather than gaps. 
-  </p>
+ </p>
+ <p>
+  Given a feature vector X of size n: <br>
+  &nbsp;<b> X = [x1, x2, ..., xn] </b>  <br>
+  <br>
+ The StandardScaler calculates the standardized feature vector Z as follows:
+
+<ol>
+  <li>Calculate the mean of the feature vector X: </li><br>
+    &nbsp;<b> mean = (x1 + x2 + ... + xn) / n </b> <br> <br>
+  <li>Calculate the standard deviation of the feature vector X:</li> <br> 
+    &nbsp;<b> std_dev = sqrt( ((x1 - mean)^2 + (x2 - mean)^2 + ... + (xn - mean)^2) / n ) </b> <br> <br>
+  <li>Subtract the mean from each element of X:</li> <br> <br>
+    &nbsp;<b> X = [x1 - mean, x2 - mean, ..., xn - mean] </b> <br> <br>
+  <li> Divide each element of X by the standard deviation: </li> <br>
+    &nbsp;<b> Z = [ (x1 - mean) / std_dev, (x2 - mean) / std_dev, ..., (xn - mean) / std_dev ] </b> <br> <br>
+ </ol> 
+The resulting standardized feature vector Z has a mean of zero and a standard deviation of one, which is useful for ensuring that different features are on the same scale and for improving the performance of certain machine learning algorithms.
+ </p>
 
 ![Standard Scaler Code](https://github.com/samuelroiz/Predict_Credit_Risk/blob/main/Images/standard_scaler_code.png)
 
