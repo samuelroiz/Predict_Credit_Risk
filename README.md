@@ -173,8 +173,15 @@ The RandomForestClassifier Model() will have the same code except X_train and X_
   In this specific model, the standard scaler improves the Logistic Regression Model. It improved from 0.5168013611229264 to 0.767333049766057 and an improvement for the Logistic Regression model. Applying the standard scaler worked for the logistic regression model is because the data has outliers and gaps from each data point. Outliers and gaps decrease the accuracy of the model. However, applying the standard scaler does not always help the model's accuracy. 
 </p>
 
-<p>
-</p>
+<pre>
+  StandardScaler can potentially improve or weaken the accuracy of a model, depending on the nature of the data and the modeling algorithm being used.
+
+In general, StandardScaler can help improve model accuracy by ensuring that all features are on the same scale. This is important for modeling algorithms that are sensitive to the scale of the features, such as those based on distances or gradients (e.g., k-nearest neighbors, gradient descent-based algorithms). By scaling the features to have zero mean and unit variance, StandardScaler can help these algorithms converge more quickly and produce better results.
+
+On the other hand, StandardScaler may not be helpful or may even hurt model accuracy if the data is already well-scaled and the algorithm being used is not sensitive to feature scaling. In some cases, scaling the data can introduce noise or outliers that can negatively impact model performance. Additionally, if the data has a highly skewed distribution, scaling may not be appropriate and other techniques such as normalization or log transformation may be more effective.
+
+Ultimately, the effect of StandardScaler on model accuracy will depend on the specific dataset and algorithm being used, so it's important to evaluate the impact of feature scaling on model performance in a systematic way.
+</pre>
 
 
 
