@@ -93,6 +93,41 @@ To demonstrate the algorithm and how it functions, consider the data set {1,2,3,
 </p>
 
 <p>
+  This is how the math works behind the Standard Scaler. <br>
+  &nbsp;The steps to apply StandardScaler to the data set [1,2,3,4,5]: <br>
+  &nbsp;<ol>
+    <li>Calculate the mean of the feature vector X:</li> <br>
+    <b> mean = (1 + 2 + 3 + 4 + 5) / 5 = 3 </b> <br> <br>
+    <li> Calculate the standard deviation of the feature vector X: </li> <br> 
+    <b> std_dev = sqrt( ((1 - 3)^2 + (2 - 3)^2 + (3 - 3)^2 + (4 - 3)^2 + (5 - 3)^2) / 5 ) = 1.4142 </b> <br> <br>
+    <li> Subtract the mean from each element of X: </li> <br>
+    <b> X = [1 - 3, 2 - 3, 3 - 3, 4 - 3, 5 - 3] = [-2, -1, 0, 1, 2] </b> <br> <br> 
+    <li> Divide each element of X by the standard deviation: </li> <br>
+    <b> Z = [-2 / 1.4142, -1 / 1.4142, 0 / 1.4142, 1 / 1.4142, 2 / 1.4142] = [-1.4142, -0.7071, 0, 0.7071, 1.4142] </b> <br> <br>
+    </ol>
+ </p>
+ <p>  So the standardized feature vector <b> Z is [-1.4142, -0.7071, 0, 0.7071, 1.4142]</b>. </p>
+ <p> Note that when applying StandardScaler to a data set, the <b> fit </b> method is used to calculate the mean and standard deviation, and the <b> transform </b> method is used to apply the scaling to the data. In this case, since we only have one feature, we could use the <b> fit_transform method </b> to combine these two steps: </p>
+ 
+<p> 
+   <b> from sklearn.preprocessing import StandardScaler <br> 
+   import numpy as np <br> 
+   X = np.array([1, 2, 3, 4, 5]).reshape(-1, 1) <br>
+  scaler = StandardScaler() <br>
+  X_std = scaler.fit_transform(X) <br> 
+  print(X_std) </b> 
+</p>
+
+<p> This will produce the output: </p>
+<p> <b>
+[[-1.41421356] <br>
+ [-0.70710678] <br>
+ [ 0.        ] <br>
+ [ 0.70710678] <br>
+  [ 1.41421356]] </b>
+</p>
+
+<p>
   The following example takes all of the data points and converts them to a closer range of 0 to 1. Standard scaler helps prevent outliers and keep the data closer to each other rather than gaps. 
  </p>
  <p>
