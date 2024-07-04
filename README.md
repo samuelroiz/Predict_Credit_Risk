@@ -1,6 +1,6 @@
 # Predict_Credit_Risk
 <p>
-Built a machine learning model that attempts to predict whether a loan will become high risk or not for a company named LendingClub. LendingClub is a peer-to-peer lending services company that allows individual investors to partially fund personal loans as well as buy and sell notes backing the loans on a secondary market. LendingClub offers their previous data through an API. Utilized the given data from LendingClub to create machine learning models to classify the risk level of loans. Compared the Logistic Regression model and Random Forest Classifier with sklearn and pandas. 
+Built a machine learning model to predict whether a loan will become high risk for a company named LendingClub. LendingClub is a peer-to-peer lending service that allows individual investors to partially fund personal loans and buy and sell notes backing the loans on a secondary market. LendingClub provides its historical data through an API. We utilized this data to create machine learning models to classify the risk level of loans, comparing the Logistic Regression model and Random Forest Classifier using sklearn and pandas.
 </p>
 
 
@@ -10,7 +10,7 @@ Built a machine learning model that attempts to predict whether a loan will beco
 ## Machine Learning Steps
 
 <p>
-In the given 2019 and 2020 Q1 data frames, not all of the column values were numeric. None numeric columns lead to an issue because if the column values are not numeric,  it fails to meet the standards of machine learning models. As we can see in the train data frame, we have seven columns that fail to hold numeric values only. 
+In the given 2019 and 2020 Q1 data frames, not all of the column values were numeric. Non-numeric columns lead to issues because machine learning models require numeric values. In the training data frame, we identified seven columns that contain non-numeric values.
 </p>
 
 ![2019 Train Table](https://github.com/samuelroiz/Predict_Credit_Risk/blob/main/Images/train_df_aka_2019.png)
@@ -18,11 +18,11 @@ In the given 2019 and 2020 Q1 data frames, not all of the column values were num
 ![2020 Q1 Test Table](https://github.com/samuelroiz/Predict_Credit_Risk/blob/main/Images/test_df_aka_2020_q1.png)
 
 <p>
-Both data frames have over fifty columns. The following code will help break down the columns with object values only. Object values are the same thing as string values. 
+Both data frames have over fifty columns. The following code will help identify the columns containing object values, which are the same as string values. 
 </p>
 
 <p>
-To convert the non-numeric columns is apply the get_dummies() method.
+To convert the non-numeric columns, apply the get_dummies() method.
 </p>
 
 #### <u> pd.get_dummies() </u>
@@ -31,7 +31,7 @@ To convert the non-numeric columns is apply the get_dummies() method.
 Here is an example of how pd.get_dummies() work.
 </p> 
 
-![Get_Dummies() Part 1](https://github.com/samuelroiz/Predict_Credit_Risk/blob/main/Images/example_get_dummies_part_1.png) <p> The following data frame is named <i> preview_get_dummies </i> displays two non-numeric columns. </p>
+![Get_Dummies() Part 1](https://github.com/samuelroiz/Predict_Credit_Risk/blob/main/Images/example_get_dummies_part_1.png) <p> The following data frame, named <i>preview_get_dummies</i>, displays two non-numeric columns. </p>
 
 <p>
   Then apply the get_dummies() code: <b> pd.get_dummies(<i> preview_get_dummies </i>) </b>
